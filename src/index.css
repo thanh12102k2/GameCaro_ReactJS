@@ -85,7 +85,7 @@ input[type="number"] {
 
 .btn-bold {
   font-weight: bold;
-  margin-bottom: 285px;
+  /* margin-bottom: 285px; */
 }
 
 ol {
@@ -151,6 +151,7 @@ button:hover {
 .game-info-container {
   max-height: 400px; /* Đặt kích thước tối đa bạn mong muốn */
   overflow-y: auto; /* Bật tính năng cuộn khi nội dung vượt quá kích thước tối đa */
+  /* margin-bottom: 285px; */
 }
 
 
