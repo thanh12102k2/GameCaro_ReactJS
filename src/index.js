@@ -2,10 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 
-const defaultWidth = 10;
-const defaultHeight = 10;
+const defaultWidth = 13;
+const defaultHeight = 13;
 const minSize = 5;
-const maxSize = 25;
+const maxSize = 20;
 const nSquareToWin = 5;
 
 function Square(props) {
@@ -285,7 +285,7 @@ class Game extends React.Component {
             <div>
               <button style={{marginBottom:"5px"}} onClick={this.sort}>Thứ tự bước {arrow}</button>
             </div>
-            <div>{status}</div>
+            <div style={{fontWeight: "bold"}}>{status}</div>
             <ol>{moves}</ol>
           </div>
         </div>
