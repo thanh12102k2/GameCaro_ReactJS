@@ -1,0 +1,34 @@
+.square-X {
+    color: blue;
+    font-size: 30px;
+    background-color: #ccc;
+  }
+  
+  .square-O {
+    color: red;
+    font-size: 30px;
+    background-color: #ccc;
+  }
+
+  .square {
+    font-size: 28px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 0;
+    border: 0.2px solid rgba(255,222,173,0.5);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .square:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .square.square-highlight {
+    background-color: #ffcccb;
+  }
