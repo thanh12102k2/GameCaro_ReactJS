@@ -1,6 +1,5 @@
 import React from 'react';
 import Board from './Board';
-import "../index";
 import { calculateWinner } from './helper';
 
 const defaultWidth = 13;
@@ -34,12 +33,14 @@ class Game extends React.Component {
       this.handleChangeWidth = this.handleChangeWidth.bind(this);
       this.sort = this.sort.bind(this);
     }
+
     jumpTo(step) {
       this.setState({
         stepNumber: step,
         xIsNext: (step % 2) === 0,
       })
     }
+
     handleClick(i, j) {
       const history = this.state.history.slice(0, this.state.stepNumber + 1);
       const current = history[this.state.stepNumber];
@@ -61,9 +62,11 @@ class Game extends React.Component {
         xIsNext: !this.state.xIsNext,
       });
     }
+
     sort() {
       this.setState({isDescending: !this.state.isDescending});
     }
+
     handleChangeWidth(e) {
       const val = Number(e.target.value);
       this.setState({inputWidth: val});
@@ -83,6 +86,7 @@ class Game extends React.Component {
         });
       }
     }
+
     handleChangeHeight(e) {
       const val = Number(e.target.value);
       this.setState({inputHeight: val});
@@ -102,18 +106,17 @@ class Game extends React.Component {
         });
       }
     }
+
     render() {
       const history = this.state.history;
       const current = history[this.state.stepNumber];
       const winner = calculateWinner(current.squares);
     
       const moves = history.map((step, move) => {
-        const desc = move ?
-          'Go to move #' + move + ' (' + step.location.x + ',' + step.location.y + ')' :
-          'Go to game start';
+        const desc = move ? 'Quay lại bước #' + move + ' (' + step.location.x + ',' + step.location.y + ')' : 'Bắt đầu lại';
         return (
           <li key={move}>
-            <button onClick={() => this.jumpTo(move)}>
+            <button onClick={() => this.jumpTo(move)} style={{width:"160px"}}>
               {desc}
             </button>
           </li>
@@ -126,9 +129,9 @@ class Game extends React.Component {
     
       let status;
       if (winner) {
-        status = 'Winner: ' + winner.val;
+        status = 'Người thắng: ' + winner.val;
       } else {
-        status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
+        status = 'Bước tiếp theo: ' + (this.state.xIsNext ? 'X' : 'O');
       }
     
       let arrow = this.state.isDescending ? '↓' : '↑';
@@ -144,7 +147,7 @@ class Game extends React.Component {
               onChange={this.handleChangeWidth}
             />
             <br />
-            <span className="fixed-size">Chiều cao:</span>
+            <span className="fixed-size" style={{paddingRight:"8px"}}>Chiều cao:</span>
             <input
               type="number"
               placeholder="Chiều cao"
@@ -162,7 +165,7 @@ class Game extends React.Component {
             </div>
             <div className="game-info">
               <div>
-                <button onClick={this.sort}>Thứ tự bước {arrow}</button>
+                <button onClick={this.sort} style={{marginBottom:"5px"}}>Thứ tự bước {arrow}</button>
               </div>
               <div>{status}</div>
               <ol>{moves}</ol>
