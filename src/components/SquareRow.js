@@ -1,9 +1,7 @@
 import React from 'react';
 import Square from './Square';
-import "../index.css";
 
 const nSquareToWin = 5;
-
 class SquareRow extends React.Component {
     render() {
       let squareRow = this.props.row.map((square, idx) => {

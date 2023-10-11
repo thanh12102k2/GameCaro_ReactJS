@@ -13,6 +13,9 @@ function Home(){
           <p style={{color:"#708090", marginLeft:"18px"}}> Fighting</p>
           </h1>
           <Link to="/game" className='home-btn'>Bắt đầu </Link>
+          <h3 style={{fontFamily:"'Dancing Script',cursive", color:"#708090"}}>
+            Edit by <a href='https://github.com/thanh12102k2/GameCaro_ReactJS' style={{textDecoration:"none", color:"#3CB371"}}> TienThanhNguyen</a>
+          </h3>
         </div>
       </div>
     );

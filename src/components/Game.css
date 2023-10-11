@@ -79,13 +79,13 @@ body {
     cursor: pointer;
     padding: 5px 10px;
     border: none;
-    background-color: #007bff;
+    background-color: #00BFFF;
     color: #fff;
     border-radius: 5px;
   }
   
   button:hover {
-    background-color: #0056b3;
+    background-color: #59d3fc;
   }
   
   .status {
