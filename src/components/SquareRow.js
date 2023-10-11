@@ -20,7 +20,6 @@ class SquareRow extends React.Component {
               win = true;
           }
           if (winner.direction === "ToLeftDown" && idx <= winner.x && idx >= winner.x - nSquareToWin + 1 && winner.x - idx === rowIdx - winner.y) {
-              console.log(winner.x+' '+winner.y+' '+idx+' '+rowIdx+' '+nSquareToWin);
               win = true;
           }
         }

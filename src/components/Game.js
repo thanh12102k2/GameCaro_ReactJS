@@ -10,7 +10,7 @@ const maxSize = 20;
 
 class Game extends React.Component {
     constructor(props) {
-      super(props);
+      super(props); // gọi đến lớp cha để có thể sử dụng this
       let tmpArr = Array(defaultHeight);
       for (let i = 0; i < defaultHeight; i++) {
         tmpArr[i] = Array(defaultWidth).fill(null);
