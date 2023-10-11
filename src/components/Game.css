@@ -1,0 +1,122 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../img/sun-dawn-valley.png");
+  }
+  
+  .game-config {
+    text-align: center;
+    margin-right: 20px;
+  }
+  
+  .fixed-size {
+    font-weight: bold;
+    color: whitesmoke;
+  }
+  
+  input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .game {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+  }
+  
+  .game-board {
+    margin-right: 20px;
+    padding: 20px;
+  }
+  
+  .board-row {
+    display: flex;
+  }
+   
+  
+  .game-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn-bold {
+    font-weight: bold;
+    margin-bottom: 285px;
+  }
+  
+  ol {
+    padding: 0;
+    list-style: none;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  button {
+    font-size: 16px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .status {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .game-info {
+    max-height: 400px; /* Đặt kích thước tối đa bạn mong muốn */
+    overflow-y: auto; /* Bật tính năng cuộn khi nội dung vượt quá kích thước tối đa */
+  }
+  
+  /* Tạo thanh cuộn cho trình duyệt WebKit (Chrome, Safari) */
+  .game-info::-webkit-scrollbar {
+    width: 8px; /* Độ rộng của thanh cuộn */
+  }
+  
+  /* Màu nền cho thanh cuộn */
+  .game-info::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Màu nền thanh cuộn */
+  }
+  
+  /* Màu nền khi di chuột qua thanh cuộn */
+  .game-info::-webkit-scrollbar-thumb {
+    background: #888; /* Màu nền thanh cuộn khi hover */
+    border-radius: 4px; /* Độ cong viền thanh cuộn */
+  }
+  
+  /* Màu nền khi click vào thanh cuộn */
+  .game-info::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Màu nền thanh cuộn khi hover */
+  }
+  

@@ -1,10 +1,8 @@
 const nSquareToWin=5;
-
 function calculateWinner(squares) {
   let win;
   for (let i = 0; i < squares.length; i++) {
     for (let j = 0; j < squares[i].length; j++) {
-      //Direction: ToRight, ToRightDown, ToDown, ToLeftDown
       if (!squares[i][j]) continue;
       if (j <= squares[i].length - nSquareToWin) {
         win = true;
@@ -54,4 +52,4 @@ function calculateWinner(squares) {
   return null;
 }
 
-export { calculateWinner };
+export {calculateWinner};

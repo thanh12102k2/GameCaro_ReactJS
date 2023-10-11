@@ -1,5 +1,6 @@
 import React from 'react';
 import Board from './Board';
+import './Game.css';
 import { calculateWinner } from './helper';
 
 const defaultWidth = 13;
