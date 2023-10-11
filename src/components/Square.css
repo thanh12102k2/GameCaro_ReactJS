@@ -2,12 +2,14 @@
     color: blue;
     font-size: 30px;
     background-color: #ccc;
+    font-family: 'Dancing Script', cursive;
   }
   
   .square-O {
     color: red;
     font-size: 30px;
     background-color: #ccc;
+    font-family: 'Dancing Script', cursive;
   }
 
   .square {

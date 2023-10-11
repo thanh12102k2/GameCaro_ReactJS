@@ -1,0 +1,30 @@
+.home-page{
+    background-image: url(https://cdn.dribbble.com/users/3349387/screenshots/6852156/xo.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.home-btn{
+    background-image: linear-gradient(to right, rgb(226, 78, 78) , rgb(78, 78, 226));
+    padding: 10px 50px;
+    color: wheat;
+    font-weight: bold;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.home-title{
+    font-size: 70px;
+    font-family: 'Dancing Script', cursive;
+    display: flex;
+    justify-content: center;
+}
+
+
+  
